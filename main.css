@@ -1,0 +1,131 @@
+/* o asterisco serve para selecionar todos os elementos
+caos queira configurar td ao mesmo tempo */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+}
+
+/* Isso "justify-content: center;" não se aplica diretamente a um elemento <header> 
+essa propriedade é usada para controlar o alinhamento dos
+itens em um contêiner flex. Para alinhar 
+o texto horizontalmente, você pode usar text-align em vez disso:*/
+
+
+header {
+
+    background-color: #d5945f;
+    padding: 16px 0;
+    /* Deve ser: padding: 24px 0; sem virgula */
+    color: #fff;
+    border-bottom: 16px solid #e0bfad;
+    text-align: center;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+header button {
+
+    margin-left: 16px;
+}
+
+form h2 {
+
+    margin-bottom: 30px;
+}
+
+form {
+
+    background-color: #e0d8cf;
+    padding: 24px 0;
+    /* Deve ser: padding: 24px 0; sem virgula */
+    text-align: center;
+}
+
+input,
+button {
+
+    padding: 8px;
+}
+
+button {
+
+    background-color: #8fdaa6;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+#botao-cancelar {
+
+    background-color: rgb(240, 102, 102);
+
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul li {
+    width: 25%;
+    /* Largura fixa para todas as imagens */
+    list-style: none;
+    position: relative;
+    max-height: 280px;
+    overflow-y: hidden;
+}
+
+ul li img {
+    width: 100%;
+    height: 100%;
+}
+
+.imagem-link {
+    padding: 16px;
+    background-color: rgba(90, 84, 84, 0.7);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    min-height: 16px;
+    /* Defina uma altura mínima que não afete o layout */
+    transition: all ease .5s;
+}
+
+
+
+.imagem-link a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+ul li:hover .imagem-link {
+    opacity: 1;
+}
+
+
+ul li img {
+    /* erro q o professor nem se quer explicou e tive q procurar, outras
+pessoas tb tiveram o mesmo problema */
+    width: 100%;
+    height: 100%;
+
+}
+
+h1{
+    padding-bottom: 10px;
+}
+
+h2 {
+    color: rgb(220, 141, 76);
+}
+
+h1 {
+    color:rgb(229, 216, 207);
+}
